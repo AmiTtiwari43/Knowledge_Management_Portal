@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         $admin = User::create([
             'name' => 'Admin User',
             'email' => 'admin@example.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('Test@Password123'),
             'role' => 'admin',
         ]);
         $admin->assignRole('admin');
@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
         $instructor = User::create([
             'name' => 'Instructor User',
             'email' => 'instructor@example.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('Test@Password123'),
             'role' => 'instructor',
         ]);
         $instructor->assignRole('instructor');
@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
         $student = User::create([
             'name' => 'Student User',
             'email' => 'student@example.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('Test@Password123'),
             'role' => 'student',
         ]);
         $student->assignRole('student');
@@ -60,7 +60,7 @@ class DatabaseSeeder extends Seeder
             $newStudent = User::create([
                 'name' => $sData['name'],
                 'email' => $sData['email'],
-                'password' => bcrypt('password'),
+                'password' => bcrypt('Test@Password123'),
                 'role' => 'student',
             ]);
             $newStudent->assignRole('student');
